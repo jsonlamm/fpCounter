@@ -1,0 +1,36 @@
+{
+  "name": "tinyfpcounter",
+  "version": "1.0.0",
+  "description": "A Tiny Counter in FP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && nodemon server -e js,html --open",
+    "build": "webpack --watch",
+    "bas": "webpack --watch & live-server public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsonlamm/fpCounter.git"
+  },
+  "author": "Jason Lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsonlamm/fpCounter/issues"
+  },
+  "homepage": "https://github.com/jsonlamm/fpCounter#readme",
+  "dependencies": {
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3",
+    "tachyons": "^4.10.0",
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.3",
+    "webpack": "^4.12.0",
+    "webpack-command": "^0.2.1"
+  }
+}
