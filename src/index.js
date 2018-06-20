@@ -11,8 +11,18 @@ const tempModel = 100000;
 let view = (model) => {
   return div([
     div({className: 'mv2'}, `Count: ${model}`),
-    button({className: 'pv1 ph2 mr2'}, `+`),
-    button({className: 'pv1 ph2'}, `-`)
+    button({
+      className: 'pv1 ph2 mr2',
+      onclick: () => {
+        alert(`clicked!`)
+      }
+    }, `+`),
+    button({
+      className: 'pv1 ph2',
+      onclick: () => {
+        alert(`clicked!`)
+      }
+    }, `-`)
   ]);
 }
 
